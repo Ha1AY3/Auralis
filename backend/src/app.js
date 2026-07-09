@@ -17,7 +17,6 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/api/auth", authRouter);
 app.use("/api/songs", songRouter);
-app.use("/api/seeds", seedRouter);
 app.use("/api/likes", likeRouter);
 app.use("/api/mood", moodRouter);
 
