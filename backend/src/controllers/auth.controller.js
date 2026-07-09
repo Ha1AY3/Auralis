@@ -37,7 +37,14 @@ async function registerController(req, res){
 
     )
 
-    res.cookie("token", token);
+    const isProduction = process.env.NODE_ENV === "production";
+
+    res.cookie("token", token, {
+        httpOnly: true,
+        secure: isProduction,
+        sameSite: isProduction ? "none" : "lax",
+        maxAge: 3 * 24 * 60 * 60 * 1000
+    });
 
     res.status(201).json({
         message: "User registered successfully",
@@ -83,7 +90,14 @@ async function loginController(req, res){
     {expiresIn: "3d"}
     )
 
-    res.cookie("token", token);
+    const isProduction = process.env.NODE_ENV === "production";
+
+    res.cookie("token", token, {
+        httpOnly: true,
+        secure: isProduction,
+        sameSite: isProduction ? "none" : "lax",
+        maxAge: 3 * 24 * 60 * 60 * 1000
+    });
 
     res.status(200).json({
         message: "User logged in successfully",
@@ -116,7 +130,13 @@ async function getMeController(req, res){
 async function logoutUserController(req, res){
     const token = req.cookies.token;
 
-    res.clearCookie("token");
+    const isProduction = process.env.NODE_ENV === "production";
+
+    res.clearCookie("token", {
+        httpOnly: true,
+        secure: isProduction,
+        sameSite: isProduction ? "none" : "lax"
+    });
 
     await redis.set(token, Date.now().toString());
 
