@@ -493,7 +493,7 @@ This project is licensed under the MIT License.
 
 # 👨‍💻 Author
 
-**Hajar Raoof**
+**Hajar**
 
 GitHub:
 https://github.com/Ha1AY3
