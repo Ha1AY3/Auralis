@@ -54,35 +54,38 @@
 | **MediaPipe** | Face Detection |
 
 ---
-
 ## 📁 Project Structure
+
+```text
 auralis/
 ├── backend/
-│ ├── src/
-│ │ ├── config/ # Configuration files
-│ │ ├── controllers/ # Route controllers
-│ │ ├── middleware/ # Auth middleware
-│ │ ├── models/ # Database models
-│ │ ├── routes/ # API routes
-│ │ └── services/ # External API services
-│ ├── .env # Environment variables
-│ ├── server.js # Entry point
-│ └── package.json
+│   ├── src/
+│   │   ├── config/          # Configuration files
+│   │   ├── controllers/     # Route controllers
+│   │   ├── middleware/      # Auth middleware
+│   │   ├── models/          # Database models
+│   │   ├── routes/          # API routes
+│   │   └── services/        # External API services
+│   ├── .env                 # Environment variables
+│   ├── server.js            # Entry point
+│   └── package.json
 │
 ├── frontend/
-  ├── src/
-  │ ├── assets/ # Images & assets
-  │ ├── components/ # Reusable components
-  │ ├── context/ # React Context providers
-  │ ├── features/ # Feature-based modules
-  │ ├── hooks/ # Custom hooks
-  │ ├── pages/ # Page components
-  │ ├── services/ # API services
-  │ └── styles/ # Global styles
-  ├── .env.production # Production env
-  ├── index.html
-  └── package.json
-
+│   ├── src/
+│   │   ├── assets/          # Images & assets
+│   │   ├── components/      # Reusable components
+│   │   ├── context/         # React Context providers
+│   │   ├── features/        # Feature-based modules
+│   │   ├── hooks/           # Custom hooks
+│   │   ├── pages/           # Page components
+│   │   ├── services/        # API services
+│   │   └── styles/          # Global styles
+│   ├── .env
+│   ├── index.html
+│   └── package.json
+│
+└── README.md
+```
 ---
 
 # 🚀 Getting Started
