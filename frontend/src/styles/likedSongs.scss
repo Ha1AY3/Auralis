@@ -1,0 +1,115 @@
+.favorites-page {
+    min-height: 100vh;
+    background: linear-gradient(160deg, #f97316 0%, #ef4444 28%, #dc2626 45%, #b91c6e 65%, #7c3aed 85%, #4c1d95 100%);
+    overflow-x: hidden; 
+    overflow-y: auto;
+
+    .favorites-content {
+        padding: 10px 20px;
+        max-width: 700px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 100vh;
+
+        h2 {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .loading-state {
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 60px 0;
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 0;
+
+            p {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 18px;
+                font-family: 'Inter', sans-serif;
+                margin: 0;
+            }
+
+            .empty-hint {
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 14px;
+                margin-top: 8px;
+            }
+        }
+
+        .favorites-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    scrollbar-width: none;  // Firefox
+    
+    &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;  // Chrome, Safari, Edge
+    }
+}
+
+#root {
+    height: 100%;
+
+     &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+}
+
+@media (max-width: 768px) {
+    .favorites-page {
+        .favorites-content {
+            padding: 20px 16px 100px;
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .favorites-page {
+        .favorites-content {
+            padding: 16px 12px 80px;
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .favorites-page {
+        .favorites-content {
+            padding: 12px 10px 60px;
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+}

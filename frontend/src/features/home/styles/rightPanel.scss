@@ -1,0 +1,28 @@
+// .right-panel {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//     max-width: 320px;
+//     width: 100%;
+
+//     @media (max-width: 1024px) {
+//         max-width: 100%;
+//     }
+// }
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 350px;  // ✅ Increased from 320px
+    width: 100%;
+    flex-shrink: 0;
+    max-height: 95vh;
+    overflow: hidden;
+
+    @media (max-width: 1024px) {
+        max-width: 100%;
+        flex-shrink: 1;
+        max-height: none;
+    }
+}

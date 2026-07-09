@@ -1,0 +1,121 @@
+.face-expression{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .camera-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: -30px;
+        margin-bottom: 10px;
+        padding: 20px;  // ✅ Add padding so shadow isn't cut off
+        overflow: visible;
+
+        .camera-circle {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #111;
+            flex-shrink: 0;
+            border: 3px solid rgba(255, 170, 90, 0.6);
+            box-shadow: 
+                        0 0 20px rgba(255, 170, 90, 0.3),
+                        0 0 40px rgba(255, 170, 90, 0.2),
+                        0 0 60px rgba(255, 170, 90, 0.1);
+    
+            animation: glowPulse 2s ease-in-out infinite;
+            // Video Feed
+            .video-feed {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: scaleX(-1);
+                display: block;
+            }
+
+            // Loading State
+            .loading-state {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 14px;
+                background: #1a1a2e;
+            }
+
+            // Camera Placeholder
+            .camera-placeholder {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                gap: 8px;
+                color: rgba(255, 255, 255, 0.5);
+
+                i {
+                    font-size: 36px;
+                }
+
+                span {
+                    font-size: 12px;
+                    text-align: center;
+                    padding: 0 16px;
+                }
+            }
+        }
+    }
+
+    .detect-btn {
+        padding: 10px 32px;
+        border: none;
+        border-radius: 999px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.2); 
+        backdrop-filter: blur(10px);           
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-top: 1rem;
+
+        &:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+    }
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 
+            0 0 20px rgba(255, 170, 90, 0.3),
+            0 0 40px rgba(255, 170, 90, 0.2),
+            0 0 60px rgba(255, 170, 90, 0.1);
+    }
+    50% {
+        box-shadow: 
+            0 0 30px rgba(255, 170, 90, 0.5),
+            0 0 60px rgba(255, 170, 90, 0.3),
+            0 0 80px rgba(255, 170, 90, 0.15);
+    }
+    100% {
+        box-shadow: 
+            0 0 20px rgba(255, 170, 90, 0.3),
+            0 0 40px rgba(255, 170, 90, 0.2),
+            0 0 60px rgba(255, 170, 90, 0.1);
+    }
+}
