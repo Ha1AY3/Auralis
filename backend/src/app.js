@@ -3,7 +3,6 @@ const authRouter = require("./routes/auth.routes");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const songRouter = require("./routes/song.routes");
-const seedRouter = require("./routes/seed.routes");
 const likeRouter = require("./routes/like.routes");
 const moodRouter = require("./routes/mood.routes");
 
