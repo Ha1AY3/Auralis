@@ -1,30 +1,30 @@
 <div align="center">
 
-# 🎵 Auralis
+# Auralis
 
 ## AI-Powered Mood-Based Music Recommendation System
 
 </div>
 
-## 📖 About The Project
+## About The Project
 
 **Auralis** is an intelligent web application that uses your facial expressions to detect your current mood in real-time and recommend personalized music accordingly. Instead of asking "How are you feeling?", Auralis **knows** – automatically.
 
 ---
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
-| 🎥 **Real-time Mood Detection** | Uses MediaPipe to analyze facial expressions and detect emotions |
-| 🎧 **Smart Music Recommendations** | Automatically suggests 5 songs based on your detected mood |
-| ❤️ **Favorites System** | Save songs you love for quick access |
-| 📊 **Mood History** | Auto-tracked timeline of your emotional journey |
-| 📓 **Emotion Timeline** | View mood stats and history with beautiful visualizations |
-| 🎵 **Full Song Playback** | Stream full songs from Jamendo's library of 500,000+ tracks |
-| 🎨 **Dynamic UI** | Glass-morphism design that adapts to your mood |
+| **Real-time Mood Detection** | Uses MediaPipe to analyze facial expressions and detect emotions |
+| **Smart Music Recommendations** | Automatically suggests 5 songs based on your detected mood |
+| **Favorites System** | Save songs you love for quick access |
+| **Mood History** | Auto-tracked timeline of your emotional journey |
+| **Emotion Timeline** | View mood stats and history with beautiful visualizations |
+| **Full Song Playback** | Stream full songs from Jamendo's library of 500,000+ tracks |
+| **Dynamic UI** | Glass-morphism design that adapts to your mood |
 
 ---
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 | Technology | Purpose |
@@ -53,7 +53,7 @@
 | **MediaPipe** | Face Detection |
 
 ---
-## 📁 Project Structure
+## Project Structure
 
 ```text
 auralis/
@@ -87,7 +87,7 @@ auralis/
 ```
 ---
 
-# 🚀 Getting Started
+# Getting Started
 
 ## Prerequisites
 
@@ -101,7 +101,7 @@ Before running the project, make sure you have:
 
 ---
 
-# 📥 Installation
+# Installation
 
 ## 1. Clone the Repository
 
@@ -112,7 +112,7 @@ cd Auralis
 
 ---
 
-# ⚙️ Backend Setup
+# Backend Setup
 
 Navigate to the backend folder.
 
@@ -156,7 +156,7 @@ http://localhost:3000
 
 ---
 
-# 💻 Frontend Setup
+# Frontend Setup
 
 Navigate to the frontend folder.
 
@@ -231,7 +231,7 @@ JAMENDO_CLIENT_ID=your_client_id
 
 ---
 
-# 🔐 Redis Setup
+# Redis Setup
 
 Create a Redis Cloud database and copy:
 
@@ -245,7 +245,7 @@ Paste them into your backend `.env`.
 
 ---
 
-# 📦 Seed the Database
+# Seed the Database
 
 Once the backend is running, populate songs from Jamendo.
 
@@ -264,7 +264,7 @@ curl -X POST http://localhost:3000/api/seed
 
 ---
 
-# 🧪 Running the Application
+# Running the Application
 
 Start Backend
 
@@ -288,7 +288,7 @@ http://localhost:5173
 
 ---
 
-# 🎯 How It Works
+# How It Works
 
 ```text
 User opens camera
@@ -316,7 +316,7 @@ User can:
 
 ---
 
-# 🔗 API Endpoints
+# API Endpoints
 
 ## Authentication
 
@@ -357,7 +357,7 @@ User can:
 
 ---
 
-# 🚀 Deployment
+# Deployment
 
 ## Backend (Render)
 
@@ -407,7 +407,7 @@ Deploy.
 
 ---
 
-# ⚠️ Common Issues
+# Common Issues
 
 ### MongoDB Connection Error
 
@@ -446,7 +446,7 @@ Allow camera permissions in your browser.
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
 1. Fork the repository
 
@@ -478,7 +478,7 @@ This project is licensed under the MIT License.
 
 ---
 
-# 🙏 Acknowledgements
+# Acknowledgements
 
 - MediaPipe
 - Jamendo API
@@ -491,7 +491,7 @@ This project is licensed under the MIT License.
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Hajar**
 
